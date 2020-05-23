@@ -1,12 +1,61 @@
 <!DOCTYPE html>
  <html lang="en">
-  <head>
-  	<h1 id="title">USAPL Judging Efficiency Survey </h1>
+ <div class="container">
+  <header>
+  	<h1 id="title">USAPL Judging Efficiency Survey</h1>
+  	<p id="description">
+  		Tell us how it went and where we can improve.
+  	</p>
   	<link rel="stylesheet" href="styles.css">
+  </header>
 <body>
-<main>
-<h2>Tell us how it went and where we can improve.</h2>
+
+<form id="survey-form">
+	<label id="name-label" for="name">Name</label>
+		<input 
+		type="text"
+		 required 
+		 class="validation-error" 
+		  placeholder="Enter Name"
+		   id="name"/>
+	<label id="email-label" for="email">Email</label>
+		<input 
+		type="email" 
+		 required 
+		 class="validation-error" 
+		  placeholder="Enter Email"
+		   id="email"/>	
+	<label id="age-label" for="age">Age</label>
+		<input 
+		type="number" 
+		 required 
+		  class="validation-error" 
+		   placeholder="Enter Age"
+		    id="age"/>
+	<lable id=" weight-class-label" for="weight-class">Weight Class</lable>
+		<input 
+		type="text" 
+		 required 
+		  class="validation-error" 
+		   placeholder="Enter Weght Class"
+		    id="weight-class"/>
+	<lable id="number" for="weight-class">Weight Class</lable>
+		<input 
+		type="text" 
+		 required 
+		  class="validation-error" 
+		   placeholder="Enter Weght Class"
+		    id="weight-class"/>
+<!-- Button made from open w3s tab needs edits  -->
+<div class="buttons">
+        <button>Submit</button>
+    </div>
+<!--for test8 need to make age class only accept numbers -->
+<div id="number-label" for">
+
+	</div>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</form>
 </body>
- </main>
+<div>
 </html>
