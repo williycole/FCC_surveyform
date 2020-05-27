@@ -13,12 +13,6 @@ label{
   position: inherit;
   margin: 0 auto;
 }
-body{
- color:white;
- text-align: center;
- background-image: 
-url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
-}
   #rate-judges{
     width:500px;
     align-items: center;
@@ -33,6 +27,12 @@ url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
     flex-wrap: wrap;
     margin:auto;  
   }
+  body{
+    color:white;
+    text-align: center;
+    background-image: 
+   url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
+   }
   .container{
   display: block;
   margin-left: auto;
