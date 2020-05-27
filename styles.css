@@ -16,21 +16,9 @@ label{
 body{
  color:white;
  text-align: center;
+ background-image: 
+url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
 }
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  background-image: 
-  url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 30%;
-  }
   #rate-judges{
     width:500px;
     align-items: center;
@@ -54,5 +42,31 @@ body::before {
   Really make this page pop.*/
   max-width: 600px;
   background-color: blue;
+ opacity:0.3;
+}
+
+#additional-comments{
+  display:relative;
 }
 </style>
+
+
+
+
+
+
+/*body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: 
+  url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  }*/
+

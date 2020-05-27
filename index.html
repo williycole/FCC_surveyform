@@ -1,19 +1,17 @@
 <!DOCTYPE html>
  <html lang="en">
-
- <div class="container">
-
-  <header>
-  	<h1 id="title">USAPL Meet Outcomes Survey</h1>
-  	<p id="description">
+  <head>
+  <title>Survey Form</title>
+  	<link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+	<div class="container">
+		<h1 id="title">USAPL Meet Outcomes Survey</h1>
+		<p id="description">
   		Tell us how it went and where we can improve.
   	</p>
-  	<link rel="stylesheet" href="styles.css">
-  </header>
-<body>
-
+<form id="survey-form">
 	<div id="fill-in">
-  <form id="survey-form">
 	<label id="name-label" for="name">Name</label>
 		<input 
 		type="text"
@@ -21,7 +19,6 @@
 		 class="validation-error" 
 		  placeholder="Enter Name"
 		   id="name"/>
-
 	<label id="email-label" for="email">Email</label>
 		<input 
 		type="email" 
@@ -29,7 +26,6 @@
 		 class="validation-error" 
 		  placeholder="Enter Email"
 		   id="email"/>	
-
 	<label id="number-label" for="number">Age</label>
 		<input 
 		type="number"  min=1 max=99
@@ -38,9 +34,8 @@
 		   placeholder="Enter Age"
 		    id="number"/>
   	</div>
-
   	<div id="rate-judges">
-	<p>Please Rate Overall Judging Competency</p><!-- need to center this and have choices below-->
+	<p>Please Rate Overall Judging Competency</p>
 	<input 
 		type="radio" 
 		 id="Excellent" 
@@ -66,7 +61,6 @@
 		   value="Poor"/>
 	<label for="Poor">Poor</label><br>
  	</div>
-
  	<div id=weight-class>
 	<input type="checkbox" id="weightclass1" name="weightclass1" value="30.0kg">
  		<label for="weightclass1">30.0kg</label><br>
@@ -111,25 +105,16 @@
 	<input type="checkbox" id="weightclass21" name="weightclass21" value="120+.0kg">
  		<label for="weightclass21">120.0kg+</label><br>
  	</div>
- 		
-	<label id="dropdown-selection" for="dropdown-list" required>Select Sex</label>
+	<label id="dropdown-selection" for="dropdown">Select Sex</label>
 		<select id="dropdown" name="sex">
 			<option value="male">Male</option>
 			<option value="female">Female</option>
 		</select>
-
 	<p>Please submit additional comments here describing the over all meet experiance.</p>
-<!--<label for="additional-comments">(optional)</label>---might not want to use this--->
 		<textarea id="additional-comments" rows="10" cols="50"></textarea>
-
  <input id="submit" type="submit" value="Submit">
-</div>
-<!--
-You need to add in 
-		class="form-control"
--->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </form>
+</div>
 </body>
-<div>
 </html>
