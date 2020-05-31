@@ -30,23 +30,36 @@ label{
   body{
     color:white;
     text-align: center;
-    background-image: 
-   url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
+   
    }
-  .container{
+  div.background{
   display: block;
   margin-left: auto;
   margin-right: auto;
   /*max-height:900px;-----Need to fix this to make the background fit better,
   try padding somehow. Also need to make it slightly transperent, and rounded.
   Really make this page pop.*/
-  max-width: 600px;
-  background-color: blue;
- opacity:0.3;
-}
+  max-width: auto;
+  max-height: auto;
+  background-image: 
+   url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
+  /*make another div class to overaly this that is slightly see through*/
+  }
+  div.transbox{
+    opacity: 0.88;
+    background-color: blue;
+    width:500px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+/*basically the background ofr dive background and transbox are the same size, you need to make
+background fit the whole page and transbox smaller and it transparent and it will look correct*/
 
 #additional-comments{
-  display:relative;
+ 
 }
 </style>
 
