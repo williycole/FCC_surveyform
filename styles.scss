@@ -1,0 +1,35 @@
+body{
+    /*color:white;*/
+    text-align: center;
+
+   }
+   .background { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
+    background-size: cover;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.form-box{
+  opacity: 0.88;
+  background-color: blue;
+  width:500px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}

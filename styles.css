@@ -45,6 +45,7 @@ body{
 #fill-in{
     text-justify: auto;
     font-size: 15px;
+    text-align: center;
 }
 #name-label{
   display: block;
