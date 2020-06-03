@@ -1,122 +1,105 @@
 <!DOCTYPE html>
- <html lang="en">
-  <head>
-  <title>Survey Form</title>
-  	<link rel="stylesheet" href="styles.css">
-  </head>
+<html lang="en">
+ <head>
+ <title>Survey Form</title>
+	 <link rel="stylesheet" href="styles.css">
+ </head>
 <body>
 <div class="background">
- <div class="transbox">
-		<h1 id="title">USAPL Meet Outcomes Survey</h1>
-		<p id="description">
-  		Tell us how it went and where we can improve.
-  		</p>
-		<form id="survey-form">
-			<div id="fill-in">
-			 <label id="name-label" for="name">Name</label>
-					<input 
-					type="text"
-					required 
-					class="validation-error" 
-					placeholder="Enter Name"
-					id="name"/>
-				<label id="email-label" for="email">Email</label>
-					<input 
-					type="email" 
-					required 
-					class="validation-error" 
-					placeholder="Enter Email"
-					id="email"/>	
-				<label id="number-label" for="number">Age</label>
-					<input 
-					type="number"  min=1 max=99
-					required 
-					class="validation-error" 
-					placeholder="Enter Age"
-					id="number"/>
-  			</div>
-  			<div id="rate-judges">
-				<p>Please Rate Overall Judging Competency</p>
-					<input 
-					type="radio" 
-					id="Excellent" 
-					name="rating" 
-					value="Excellent"/>
-				<label for="Excellent">Excellent</label><br> 
-					<input 
-					type="radio" 
-					id="Good" 
-					name="rating" 
-					value="Good"/>
-				<label for="Good">Good</label><br> 
-					<input 
-					type="radio" 
-					id="Average" 
-					name="rating" 
-					value="Average"/>
-				<label for="Average">Average</label><br> 
-					<input 
-					type="radio" 
-					id="Poor" 
-					name="rating" 
-					value="Poor"/>
-				<label for="Poor">Poor</label><br>
- 			</div>
- 			<div id=weight-class>
-				<input type="checkbox" id="weightclass1" name="weightclass1" value="30.0kg">
- 					<label for="weightclass1">30.0kg</label><br>
- 				<input type="checkbox" id="weightclass2" name="weightclass2" value="35.0kg">
- 					<label for="weightclass2">35.0kg</label><br>
- 				<input type="checkbox" id="weightclass3" name="weightclass3" value="40.0kg">
- 					<label for="weightclass3">40.0kg</label><br>
- 				<input type="checkbox" id="weightclass4" name="weightclass4" value="43.0kg">
- 					<label for="weightclass4">43.0kg</label><br>
- 				<input type="checkbox" id="weightclass5" name="weightclass5" value="47.0kg">
- 					<label for="weightclass5">47.0kg</label><br>
- 				<input type="checkbox" id="weightclass6" name="weightclass6" value="48.0kg">
- 					<label for="weightclass6">48.0kg</label><br>
- 				<input type="checkbox" id="weightclass7" name="weightclass7" value="52.0kg">
- 					<label for="weightclass7">52.0kg</label><br>
- 				<input type="checkbox" id="weightclass8" name="weightclass8" value="53.0kg">
- 					<label for="weightclass8">53.0kg</label><br>
- 				<input type="checkbox" id="weightclass9" name="weightclass9" value="57.0kg">
- 					<label for="weightclass9">57.0kg</label><br>
- 				<input type="checkbox" id="weightclass10" name="weightclass10" value="59.0kg">
- 					<label for="weightclass10">59.0kg</label><br>
-				<input type="checkbox" id="weightclass11" name="weightclass11" value="63.0kg">
- 					<label for="weightclass11">63.0kg</label><br>
-				<input type="checkbox" id="weightclass12" name="weightclass12" value="66.0kg">
- 					<label for="weightclass12">66.0kg</label><br>
-				<input type="checkbox" id="weightclass13" name="weightclass13" value="72.0kg">
- 					<label for="weightclass13">72.0kg</label><br>
-				<input type="checkbox" id="weightclass14" name="weightclass14" value="74.0kg">
- 					<label for="weightclass14">74.0kg</label><br>
-				<input type="checkbox" id="weightclass15" name="weightclass15" value="83.0kg">
- 					<label for="weightclass15">83.0kg</label><br>
-				<input type="checkbox" id="weightclass16" name="weightclass16" value="84.0kg">
- 					<label for="weightclass16">84.0kg</label><br>
-				<input type="checkbox" id="weightclass17" name="weightclass17" value="84.0kg+">
- 					<label for="weightclass17">84.0kg+</label><br>
-				<input type="checkbox" id="weightclass18" name="weightclass18" value="93.0kg">
- 					<label for="weightclass18">93.0kg</label><br>
-				<input type="checkbox" id="weightclass19" name="weightclass19" value="105.0kg">
- 					<label for="weightclass19">105.0kg</label><br>
-				<input type="checkbox" id="weightclass20" name="weightclass20" value="120.0kg">
- 					<label for="weightclass20">120.0kg</label><br>
-				<input type="checkbox" id="weightclass21" name="weightclass21" value="120+.0kg">
- 					<label for="weightclass21">120.0kg+</label><br>
- 			</div>
-				<label id="dropdown-selection" for="dropdown">Select Sex</label>
-					<select id="dropdown" name="sex">
-					 <option value="male">Male</option>
-					 <option value="female">Female</option>
-					</select>
-				 <p>Please submit additional comments here describing the over all meet experiance.</p>
-					<textarea id="additional-comments" rows="10" cols="50"></textarea>
- 					 <input id="submit" type="submit" value="Submit">
-						<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-			</form>
-	</div>
+<div class="form-box">
+	   <h1 id="title">USAPL Meet Outcomes Survey</h1>
+	   <p id="description">
+		 Tell us how it went and where we can improve.
+		 </p>
+	   <form id="survey-form">
+		   <div id="fill-in">
+			<label id="name-label" for="name">Name</label>
+				   <input 
+				   type="text"
+				   required 
+				   class="validation-error" 
+				   placeholder="Enter Name"
+				   id="name"/>
+			   <label id="email-label" for="email">Email</label>
+				   <input 
+				   type="email" 
+				   required 
+				   class="validation-error" 
+				   placeholder="Enter Email"
+				   id="email"/>	
+			   <label id="number-label" for="number">Age</label>
+				   <input 
+				   type="number"  min=1 max=99
+				   required 
+				   class="validation-error" 
+				   placeholder="Enter Age"
+				   id="number"/>
+			   <label id="dropdown-selection" for="dropdown">Select Weight Class</label>
+				   <select id="dropdown" name="weight-class">
+						<option value="select class">select class</option> 
+				   <option value="30.0kg">30.0kg</option>
+				   <option value="35.0kg">35.0kg</option>
+				   <option value="40.0kg">40.0kg</option>
+				   <option value="43.0kg">43.0kg</option>
+				   <option value="47.0kg">47.0kg</option>
+				   <option value="48.0kg">48.0kg</option>
+				   <option value="52.0kg">52.0kg</option>
+				   <option value="53.0kg">53.0kg</option>
+				   <option value="57.0kg">57.0kg</option>
+				   <option value="59.0kg">59.0kg</option>
+				   <option value="63.0kg">63.0kg</option>
+				   <option value="66.0kg">66.0kg</option>
+				   <option value="72.0kg">72.0kg</option>
+				   <option value="74.0kg">74.0kg</option>
+				   <option value="83.0kg">83.0kg</option>
+				   <option value="84.0kg">84.0kg</option>
+				   <option value="84.0kg+">84.0kg+</option>
+				   <option value="93.0kg">93.0kg</option>
+				   <option value="105.0kg">105.0kg</option>
+				   <option value="120.0kg">120.0kg</option>
+				   <option value="120.0kg+">120.0kg+</option>
+				   </select>	 
+			 </div>
+			 <h3>Select sex</h3>
+			 <div id=sex>
+			   <input type="checkbox" id="Male" name="Male" value="Male">
+					<label for="Male">Male</label>
+			<input type="checkbox" id="Female" name="Female" value="35.0kg">
+					<label for="Female">Female</label>
+			</div>
+			<div id="rate-judges">
+			   <p>Please Rate Overall Judging Competency</p>
+				   <input 
+				   type="radio" 
+				   id="Excellent" 
+				   name="rating" 
+				   value="Excellent"/>
+			   <label for="Excellent">Excellent</label><br> 
+				   <input 
+				   type="radio" 
+				   id="Good" 
+				   name="rating" 
+				   value="Good"/>
+			   <label for="Good">Good</label><br> 
+				   <input 
+				   type="radio" 
+				   id="Average" 
+				   name="rating" 
+				   value="Average"/>
+			   <label for="Average">Average</label><br> 
+				   <input 
+				   type="radio" 
+				   id="Poor" 
+				   name="rating" 
+				   value="Poor"/>
+			   <label for="Poor">Poor</label><br>
+			</div>
+				<p>Please submit additional comments here describing the over all meet experiance.</p>
+				   <textarea class="comments" rows="10" cols="50"></textarea>
+					 <input id="submit" class="button" type="submit" value="Submit">
+					   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		   </form>
+   </div>
 </div>
 </body>
 </html>
