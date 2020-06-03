@@ -30,18 +30,23 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-#description{
+.description{
 	color: white;
   text-align: center;
 }
-label{
+#name-label{
   display: block;
   position: relative;
   margin: 0 auto;
 }
-.buttons{
+#email-label{
   display: block;
-  position: inherit;
+  position: relative;
+  margin: 0 auto;
+}
+#number-label{
+  display: block;
+  position: relative;
   margin: 0 auto;
 }
   #rate-judges{
@@ -51,10 +56,50 @@ label{
     flex-wrap: wrap;
     margin:auto;  
   }
+
+
+
   #weight-class{
     width:500px;
     align-items: center;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     margin:auto;  
+  }
+  .select-weight{
+    width:500px;
+    align-items: center;
+    display: block;
+    flex-wrap: wrap;
+    margin:auto;  
+  }
+  ul{
+    list-style-type: none;
+    display: block;
+    position: relative;
+    margin:auto;
+  }
+  .checkbox-grid li {
+    display: block;
+    float: left;
+    width: 15%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /*this has to have to be some kind of margin issue some howits squishing verything over*/
+  /*kinda fixed it, ad boreders, and padding and make it look super awesome*/
+
+  #fill-in{
+    text-justify: auto;
+    font-size: 15px;
+  }
+  #rate-judges{
+    font-size: 14px;
+  }
+  #dropdown-selection{
+    display: block;
+    position: center;
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
   }

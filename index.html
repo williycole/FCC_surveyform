@@ -11,7 +11,7 @@
 		<p id="description">
   		Tell us how it went and where we can improve.
   		</p>
-		<form id="survey-form">
+		<form style="survey-form" id="survey-form">
 			<div id="fill-in">
 			 <label id="name-label" for="name">Name</label>
 					<input 
@@ -34,8 +34,60 @@
 					class="validation-error" 
 					placeholder="Enter Age"
 					id="number"/>
+				<label id="dropdown-selection" for="dropdown">Select Sex</label>
+					<select id="dropdown" name="sex">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					</select>	 
   			</div>
-  			<div id="rate-judges">
+ 			<div id=weight-class>
+			  <p style="select-weight">Please select your Weight Class.</p>
+				<ul class="checkbox-grid">
+				<li><input type="checkbox" id="weightclass1" name="weightclass1" value="30.0kg">
+ 					<label for="weightclass1" style="wc1">30.0kg</label></li>
+ 				<li><input type="checkbox" id="weightclass2" name="weightclass2" value="35.0kg">
+ 					<label for="weightclass2">35.0kg</label></li>
+ 				<li><input type="checkbox" id="weightclass3" name="weightclass3" value="40.0kg">
+ 					<label for="weightclass3">40.0kg</label></li>
+ 				<li><input type="checkbox" id="weightclass4" name="weightclass4" value="43.0kg">
+ 					<label for="weightclass4">43.0kg</label></li>
+ 				<li><input type="checkbox" id="weightclass5" name="weightclass5" value="47.0kg">
+ 					<label for="weightclass5">47.0kg</label></li>
+ 				<li><input type="checkbox" id="weightclass6" name="weightclass6" value="48.0kg">
+ 					<label for="weightclass6">48.0kg</label></li>
+ 				<li><input type="checkbox" id="weightclass7" name="weightclass7" value="52.0kg">
+ 					<label for="weightclass7">52.0kg</label></li>
+ 				<li><input type="checkbox" id="weightclass8" name="weightclass8" value="53.0kg">
+ 					<label for="weightclass8">53.0kg</label></li>
+ 				<li><input type="checkbox" id="weightclass9" name="weightclass9" value="57.0kg">
+ 					<label for="weightclass9">57.0kg</label></li>
+ 				<li><input type="checkbox" id="weightclass10" name="weightclass10" value="59.0kg">
+ 					<label for="weightclass10">59.0kg</label></li>
+				<li><input type="checkbox" id="weightclass11" name="weightclass11" value="63.0kg">
+ 					<label for="weightclass11">63.0kg</label></li>
+				<li><input type="checkbox" id="weightclass12" name="weightclass12" value="66.0kg">
+ 					<label for="weightclass12">66.0kg</label></li>
+				<li><input type="checkbox" id="weightclass13" name="weightclass13" value="72.0kg">
+ 					<label for="weightclass13">72.0kg</label></li>
+				<li><input type="checkbox" id="weightclass14" name="weightclass14" value="74.0kg">
+ 					<label for="weightclass14">74.0kg</label></li>
+				<li><input type="checkbox" id="weightclass15" name="weightclass15" value="83.0kg">
+ 					<label for="weightclass15">83.0kg</label></li>
+				<li><input type="checkbox" id="weightclass16" name="weightclass16" value="84.0kg">
+ 					<label for="weightclass16">84.0kg</label></li>
+				<li><input type="checkbox" id="weightclass17" name="weightclass17" value="84.0kg+">
+ 					<label for="weightclass17">84.0kg+</label></li>
+				<li><input type="checkbox" id="weightclass18" name="weightclass18" value="93.0kg">
+ 					<label for="weightclass18">93.0kg</label></li>
+				<li><input type="checkbox" id="weightclass19" name="weightclass19" value="105.0kg">
+ 					<label for="weightclass19">105.0kg</label></li>
+				<li><input type="checkbox" id="weightclass20" name="weightclass20" value="120.0kg">
+ 					<label for="weightclass20">120.0kg</label></li>
+				<li><input type="checkbox" id="weightclass21" name="weightclass21" value="120+.0kg">
+					 <label for="weightclass21">120.0kg+</label></li>
+				 </ul>
+			 </div>
+			 <div id="rate-judges">
 				<p>Please Rate Overall Judging Competency</p>
 					<input 
 					type="radio" 
@@ -62,55 +114,6 @@
 					value="Poor"/>
 				<label for="Poor">Poor</label><br>
  			</div>
- 			<div id=weight-class>
-				<input type="checkbox" id="weightclass1" name="weightclass1" value="30.0kg">
- 					<label for="weightclass1">30.0kg</label><br>
- 				<input type="checkbox" id="weightclass2" name="weightclass2" value="35.0kg">
- 					<label for="weightclass2">35.0kg</label><br>
- 				<input type="checkbox" id="weightclass3" name="weightclass3" value="40.0kg">
- 					<label for="weightclass3">40.0kg</label><br>
- 				<input type="checkbox" id="weightclass4" name="weightclass4" value="43.0kg">
- 					<label for="weightclass4">43.0kg</label><br>
- 				<input type="checkbox" id="weightclass5" name="weightclass5" value="47.0kg">
- 					<label for="weightclass5">47.0kg</label><br>
- 				<input type="checkbox" id="weightclass6" name="weightclass6" value="48.0kg">
- 					<label for="weightclass6">48.0kg</label><br>
- 				<input type="checkbox" id="weightclass7" name="weightclass7" value="52.0kg">
- 					<label for="weightclass7">52.0kg</label><br>
- 				<input type="checkbox" id="weightclass8" name="weightclass8" value="53.0kg">
- 					<label for="weightclass8">53.0kg</label><br>
- 				<input type="checkbox" id="weightclass9" name="weightclass9" value="57.0kg">
- 					<label for="weightclass9">57.0kg</label><br>
- 				<input type="checkbox" id="weightclass10" name="weightclass10" value="59.0kg">
- 					<label for="weightclass10">59.0kg</label><br>
-				<input type="checkbox" id="weightclass11" name="weightclass11" value="63.0kg">
- 					<label for="weightclass11">63.0kg</label><br>
-				<input type="checkbox" id="weightclass12" name="weightclass12" value="66.0kg">
- 					<label for="weightclass12">66.0kg</label><br>
-				<input type="checkbox" id="weightclass13" name="weightclass13" value="72.0kg">
- 					<label for="weightclass13">72.0kg</label><br>
-				<input type="checkbox" id="weightclass14" name="weightclass14" value="74.0kg">
- 					<label for="weightclass14">74.0kg</label><br>
-				<input type="checkbox" id="weightclass15" name="weightclass15" value="83.0kg">
- 					<label for="weightclass15">83.0kg</label><br>
-				<input type="checkbox" id="weightclass16" name="weightclass16" value="84.0kg">
- 					<label for="weightclass16">84.0kg</label><br>
-				<input type="checkbox" id="weightclass17" name="weightclass17" value="84.0kg+">
- 					<label for="weightclass17">84.0kg+</label><br>
-				<input type="checkbox" id="weightclass18" name="weightclass18" value="93.0kg">
- 					<label for="weightclass18">93.0kg</label><br>
-				<input type="checkbox" id="weightclass19" name="weightclass19" value="105.0kg">
- 					<label for="weightclass19">105.0kg</label><br>
-				<input type="checkbox" id="weightclass20" name="weightclass20" value="120.0kg">
- 					<label for="weightclass20">120.0kg</label><br>
-				<input type="checkbox" id="weightclass21" name="weightclass21" value="120+.0kg">
- 					<label for="weightclass21">120.0kg+</label><br>
- 			</div>
-				<label id="dropdown-selection" for="dropdown">Select Sex</label>
-					<select id="dropdown" name="sex">
-					 <option value="male">Male</option>
-					 <option value="female">Female</option>
-					</select>
 				 <p>Please submit additional comments here describing the over all meet experiance.</p>
 					<textarea id="additional-comments" rows="10" cols="50"></textarea>
  					 <input id="submit" type="submit" value="Submit">
