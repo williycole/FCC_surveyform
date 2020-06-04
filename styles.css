@@ -1,39 +1,33 @@
-html {
-  scroll-behavior: smooth;
-}
 
 body{
     color:white;
     text-align: center;
+    background-image: url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:fixed; 
+    background-color:rgba(70, 94, 173, 0.522);
+    background-blend-mode: overlay;
+    text-align: center;
    }
-   .background { 
-    position: relative; 
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #191970;
-}
-.background::before {
-  content: "";
-  background-image: url(https://purefitnesswi.com/wp-content/uploads/2019/01/MMH_9100.jpg);
-  background-size: cover;
-  
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.60;
-}
 .form-box{
   opacity: 0.9;
   background-color:rgb(0,0,128);
   align-items: center;
   border-radius: 25px;
   border-style: solid;
-  position: sticky;
+  margin-top:0%;
+  margin-right: 80%;
+  margin-bottom: 80%;
+  margin-left: 20%;
+  height: 1100px;
+  max-width: 900px;
+  }@media (min-width: 200px) { 
+   .form-box {
+    width: 80%;
+    align-items: center;
+    margin: 0 auto 0 auto;
+  }
 }
 #description{
 	color: white;
@@ -70,35 +64,43 @@ body{
   text-align: center;
 }
 #rate-judges{
-  font-size: 16px;
-  width:400px;
+  max-width:200px;
   align-items: center;
   display:grid;
   flex-wrap: wrap;
   margin:auto;  
+  font-size: 12;
+}@media (min-width: 400px) { 
+  #rate-judges {
+   font-size: 18px; 
+   align-items: center;
+  }
 }
 .comments{
   width: 60%;
-  height: 100px;
+  height: 120px;
   padding: 10px;
   border: 5px solid #4682B4;
   background-color: #d0e2bc;
   font: 1.0em/1.2em cursive;
   color: rgb(5, 32, 54);
+  }@media (min-width: 400px){ 
+  .comments{
+  width: 60%;
+  height: 280px;
+  padding: 10px;
+  border: 5px solid #4682B4;
+  background-color: #d0e2bc;
+  font: 1.0em/1.2em cursive;
+  color: rgb(5, 32, 54);
+  }
 } 
-#submit{
-  color:rgb(5, 32, 54);
-}
 .button {
-  width: 200px;
-  position: absolute; 
-  right:    0;
-  bottom:   0;
   overflow: hidden;
   background-color: #FF0000;
   border: none;
   color: white;
-  padding: 20px;
+  padding: 1px;
   text-align: center;
   font-size: 14px;
   margin: 4px 2px;
@@ -107,5 +109,21 @@ body{
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-}
+  }@media (min-width: 400px){
+    .button {
+    overflow: hidden;
+    background-color: #FF0000;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    }
+  }
 .button:hover {opacity: 1}
