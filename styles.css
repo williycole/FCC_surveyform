@@ -84,7 +84,7 @@ body{
   height: 110px;
   padding: 10px;
   border: 5px solid  rgb(0,0,128);
-  background-color: #d0e2bc;
+  background-color: white;
   font: 1.0em/1.2em cursive;
   color: rgb(5, 32, 54);
   }@media (min-width: 400px){ 
@@ -93,7 +93,7 @@ body{
   height: 230px;
   padding: 10px;
   border: 5px solid  rgb(0,0,128);
-  background-color: #d0e2bc;
+  background-color: white;
   font: 1.0em/1.2em cursive;
   color:  rgb(0,0,128);
   }
