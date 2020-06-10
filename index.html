@@ -3,8 +3,9 @@
  <head>
  <title>Survey Form</title>
 	 <link rel="stylesheet" href="styles.css">
+	<script>src="main.js"</script>
  </head>
-<body class="background">
+<b.ody class="background">
 <div class="form-box">
 	   <h1 id="title">USAPL Meet Experiance Survey</h1>
 	   <p id="description">
@@ -28,7 +29,7 @@
 				   id="email"/>	
 			   <label id="number-label" for="number">Age</label>
 				   <input 
-				   type="number"  min=1 max=99
+				   type="number"  min=13 max=99
 				   required 
 				   class="validation-error" 
 				   placeholder="Enter Age"
@@ -60,11 +61,9 @@
 				   </select>	 
 			 </div>
 			 <h3>Select sex</h3>
-			 <div id=sex>
-			   <input type="checkbox" id="Male" name="Male" value="Male">
-					<label for="Male">Male</label>
-			<input type="checkbox" id="Female" name="Female" value="35.0kg">
-					<label for="Female">Female</label>
+			<div id="sex">
+					<input type="checkbox" name="skill" class="check" value="male"> Male		
+					<input type="checkbox" name="skill" class="check" value="female"> Female
 			</div>
 			<div id="rate-judges">
 			   <p>Please Rate Overall Judging Accuracy</p>
@@ -73,33 +72,31 @@
 				   id="Excellent" 
 				   name="rating" 
 				   value="Excellent"/>
-			   <label for="Excellent">Excellent</label><br> 
+			   <label for="Excellent">Excellent</label> 
 				   <input 
 				   type="radio" 
 				   id="Good" 
 				   name="rating" 
 				   value="Good"/>
-			   <label for="Good">Good</label><br> 
+			   <label for="Good">Good</label>
 				   <input 
 				   type="radio" 
 				   id="Average" 
 				   name="rating" 
 				   value="Average"/>
-			   <label for="Average">Average</label><br> 
+			   <label for="Average">Average</label> 
 				   <input 
 				   type="radio" 
 				   id="Poor" 
 				   name="rating" 
 				   value="Poor"/>
-			   <label for="Poor">Poor</label><br>
+			   <label for="Poor">Poor</label>
 			</div>
 				<p>Please submit additional comments here describing the over all meet experiance.</p>
-				   <textarea class="comments" rows="10" cols="50"></textarea><br>
+				   <textarea class="comments" rows="10" cols="50"></textarea>
 					 <input id="submit" class="button" type="submit" value="Submit">
 					   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 		   </form>
-
-
    </div>
 </body>
 </html>
