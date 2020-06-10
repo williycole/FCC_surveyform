@@ -5,7 +5,7 @@
 	 <link rel="stylesheet" href="styles.css">
 	<script>src="main.js"</script>
  </head>
-<b.ody class="background">
+<body class="background">
 <div class="form-box">
 	   <h1 id="title">USAPL Meet Experiance Survey</h1>
 	   <p id="description">
@@ -15,28 +15,30 @@
 		   <div id="fill-in">
 			<label id="name-label" for="name">Name</label>
 				   <input 
+				   id="name"
 				   type="text"
+				   class="validation-error"
+				   placeholder="Ed Coan"
 				   required 
-				   class="validation-error" 
-				   placeholder="Enter Name"
-				   id="name"/>
+				   />
 			   <label id="email-label" for="email">Email</label>
 				   <input 
+				   id="email"
 				   type="email" 
-				   required 
 				   class="validation-error" 
-				   placeholder="Enter Email"
-				   id="email"/>	
+				   placeholder="squatdeeper@email.com"
+				   required 
+				   />	
 			   <label id="number-label" for="number">Age</label>
 				   <input 
+				   id="number"
 				   type="number"  min=13 max=99
-				   required 
 				   class="validation-error" 
 				   placeholder="Enter Age"
-				   id="number"/>
+				   required />
 			   <label id="dropdown-selection" for="dropdown">Select Weight Class</label>
 				   <select id="dropdown" name="weight-class">
-						<option value="select class">select class</option> 
+				   <option value="select class">select class</option> 
 				   <option value="30.0kg">30.0kg</option>
 				   <option value="35.0kg">35.0kg</option>
 				   <option value="40.0kg">40.0kg</option>
@@ -60,10 +62,16 @@
 				   <option value="120.0kg+">120.0kg+</option>
 				   </select>	 
 			 </div>
-			 <h3>Select sex</h3>
-			<div id="sex">
-					<input type="checkbox" name="skill" class="check" value="male"> Male		
-					<input type="checkbox" name="skill" class="check" value="female"> Female
+			 <h3>Please select areas where we could improve.</h3>
+			<div id="improvements" class="improvements">
+					<input type="checkbox" name="Judging Calls" class="check" value="Judging Rotation"> Judging Calls
+					<input type="checkbox" name="Judging Rotation" class="check" value="Judging Rotation"> Judging Rotation	
+					<input type="checkbox" name="Judge Feedback & Communication" class="check" value="Judge Feedback & Communication"> Judge Feedback & Communication
+					<input type="checkbox" name="Check In" class="check" value="Check in"> Check in
+					<input type="checkbox" name="Weigh In" class="check" value="Weigh in"> Weigh in		
+					<input type="checkbox" name="Chalk & Powder Station" class="check" value="Chalk & Powder Station"> Chalk & Powder Station
+					<input type="checkbox" name="Warm Up Area" class="check" value="Warm Up Area"> Warm Up Area		
+					<input type="checkbox" name="Seating & Accesability" class="check" value="Seating & Accesability"> Seating & Accesability
 			</div>
 			<div id="rate-judges">
 			   <p>Please Rate Overall Judging Accuracy</p>
@@ -91,6 +99,19 @@
 				   name="rating" 
 				   value="Poor"/>
 			   <label for="Poor">Poor</label>
+					<p id="select-gender">Please select Gender</p>
+						<input 
+						type="radio" 
+						id="Male" 
+						name="Gender" 
+						value="Male"/>
+					<label for="Male">Male</label> 
+						<input 
+						type="radio" 
+						id="Female" 
+						name="Gender" 
+						value="Female"/>
+					<label for="Female">Female</label>
 			</div>
 				<p>Please submit additional comments here describing the over all meet experiance.</p>
 				   <textarea class="comments" rows="10" cols="50"></textarea>

@@ -16,19 +16,14 @@ body{
 .form-box{
   opacity: 0.9;
   background-color:rgba(19, 46, 163, 0.904);
-  align-items: center;
+
   border-radius: 25px;
   border-style: solid;
-  margin-top:0%;
-  margin-right: 80%;
-  margin-bottom: 80%;
-  margin-left: 20%;
-  height: 1100px;
-  max-width: 900px;
+  
   }@media (min-width: 200px) { 
    .form-box {
     width: 80%;
-    align-items: center;
+   
     margin: 0 auto 0 auto;
   }
 }
@@ -66,18 +61,21 @@ body{
   width: 20%;
   text-align: center;
 }
+#improvements{
+ display: grid;
+ grid-template-columns: min-content min-content;
+ gap: 0 1rem;
+ align-items: center;
+ position: inherit;
+ max-width:150px;
+ margin:auto; 
+
+}
 #rate-judges{
   max-width:200px;
-  align-items: center;
   display:grid;
   flex-wrap: wrap;
   margin:auto;  
-  font-size: 12;
-}@media (min-width: 400px) { 
-  #rate-judges {
-   font-size: 18px; 
-   align-items: center;
-  }
 }
 .comments{
   width: 60%;
