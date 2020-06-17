@@ -34,6 +34,8 @@ body{
   font-style: italic;
   text-decoration: underline;
 }
+/*-----------------need to make the content on this page scroll but the backgorund be static
+That is what you could never figure out, remember seeingit on the web developer/css zen garden-----------*/
 #fill-in{
     text-justify: auto;
     font-size: 18px;
