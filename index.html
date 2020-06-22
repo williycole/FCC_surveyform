@@ -5,13 +5,12 @@
 	 <link rel="stylesheet" href="styles.css">
 	<script>src="main.js"</script>
  </head>
-<body class="background">
-<div class="form-box">
+<body>
+	<form id="survey-form">
 	   <h1 id="title">USAPL Meet Experiance Survey</h1>
 	   <p id="description">
 		 Tell us how it went and where we can improve.
 		 </p>
-	   <form id="survey-form">
 		   <div id="fill-in">
 			<label id="name-label" for="name">Name</label>
 				   <input 
@@ -113,11 +112,14 @@
 						value="Female"/>
 					<label for="Female">Female</label>
 			</div>
+			<div id="add-comments">
 				<p>Please submit additional comments here describing the over all meet experiance.</p>
 				   <textarea class="comments" rows="10" cols="50"></textarea>
-					 <input id="submit" class="button" type="submit" value="Submit">
-					   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-		   </form>
-   </div>
+			</div>
+			  <div id="sub-button">	  
+			  <input id="submit" class="button" type="submit" value="Submit">
+			  </div>	
+			   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		</form>
 </body>
 </html>
