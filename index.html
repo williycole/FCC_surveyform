@@ -1,125 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
- <title>Survey Form</title>
-	 <link rel="stylesheet" href="styles.css">
-	<script>src="main.js"</script>
- </head>
+
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="styles.css">
+	<script></script>
+</head>
+
 <body>
 	<form id="survey-form">
-	   <h1 id="title">USAPL Meet Experience Survey</h1>
-	   <p id="description">
-		 Tell us about your meet
-		 </p>
-		   <div id="fill-in">
+		<h1 id="title">USAPL Meet Experience Survey</h1>
+		<p id="description">
+			Tell us about your meet
+		</p>
+		<div id="fill-in">
 			<label id="name-label" for="name">Name</label>
-				   <input 
-				   id="name"
-				   type="text"
-				   class="validation-error"
-				   placeholder="Ed Coan"
-				   required 
-				   />
-			   <label id="email-label" for="email">Email</label>
-				   <input 
-				   id="email"
-				   type="email" 
-				   class="validation-error" 
-				   placeholder="squatdeeper@email.com"
-				   required 
-				   />	
-			   <label id="number-label" for="number">Age</label>
-				   <input 
-				   id="number"
-				   type="number"  min=13 max=99
-				   class="validation-error" 
-				   placeholder="Enter Age"
-				   required />
-			   <label id="dropdown-selection" for="dropdown">Select Weight Class</label>
-				   <select id="dropdown" name="weight-class">
-				   <option value="select class">select class</option> 
-				   <option value="30.0kg">30.0kg</option>
-				   <option value="35.0kg">35.0kg</option>
-				   <option value="40.0kg">40.0kg</option>
-				   <option value="43.0kg">43.0kg</option>
-				   <option value="47.0kg">47.0kg</option>
-				   <option value="48.0kg">48.0kg</option>
-				   <option value="52.0kg">52.0kg</option>
-				   <option value="53.0kg">53.0kg</option>
-				   <option value="57.0kg">57.0kg</option>
-				   <option value="59.0kg">59.0kg</option>
-				   <option value="63.0kg">63.0kg</option>
-				   <option value="66.0kg">66.0kg</option>
-				   <option value="72.0kg">72.0kg</option>
-				   <option value="74.0kg">74.0kg</option>
-				   <option value="83.0kg">83.0kg</option>
-				   <option value="84.0kg">84.0kg</option>
-				   <option value="84.0kg+">84.0kg+</option>
-				   <option value="93.0kg">93.0kg</option>
-				   <option value="105.0kg">105.0kg</option>
-				   <option value="120.0kg">120.0kg</option>
-				   <option value="120.0kg+">120.0kg+</option>
-				   </select>	 
-			 </div>
-			 <h3>Please select areas where we could improve.</h3>
-			<div id="improvements" class="improvements">
-					<input type="checkbox" name="Judging Calls" class="check" value="Judging Rotation"> Judging Calls
-					<input type="checkbox" name="Judging Rotation" class="check" value="Judging Rotation"> Judging Rotation	
-					<input type="checkbox" name="Judge Feedback & Communication" class="check" value="Judge Feedback & Communication"> Judge Feedback & Communication
-					<input type="checkbox" name="Check In" class="check" value="Check in"> Check in
-					<input type="checkbox" name="Weigh In" class="check" value="Weigh in"> Weigh in		
-					<input type="checkbox" name="Chalk & Powder Station" class="check" value="Chalk & Powder Station"> Chalk & Powder Station
-					<input type="checkbox" name="Warm Up Area" class="check" value="Warm Up Area"> Warm Up Area		
-					<input type="checkbox" name="Seating & Accesability" class="check" value="Seating & Accesability"> Seating & Accesability
-			</div>
-			<div id="rate-judges">
-			   <p id="rate-heading">Please Rate Overall Judging Accuracy</p>
-				   <input 
-				   type="radio" 
-				   id="Excellent" 
-				   name="rating" 
-				   value="Excellent"/>
-			   <label for="Excellent">Excellent</label> 
-				   <input 
-				   type="radio" 
-				   id="Good" 
-				   name="rating" 
-				   value="Good"/>
-			   <label for="Good">Good</label>
-				   <input 
-				   type="radio" 
-				   id="Average" 
-				   name="rating" 
-				   value="Average"/>
-			   <label for="Average">Average</label> 
-				   <input 
-				   type="radio" 
-				   id="Poor" 
-				   name="rating" 
-				   value="Poor"/>
-			   <label for="Poor">Poor</label>
-					<p id="select-gender">Please select Gender</p>
-						<input 
-						type="radio" 
-						id="Male" 
-						name="Gender" 
-						value="Male"/>
-					<label for="Male">Male</label> 
-						<input 
-						type="radio" 
-						id="Female" 
-						name="Gender" 
-						value="Female"/>
-					<label for="Female">Female</label>
-			</div>
-			<div id="add-comments">
-				<p>Please submit additional feedback below.</p>
-				   <textarea class="comments" rows="10" cols="50"></textarea>
-			</div>
-			  <div id="sub-button">	  
-			  <input id="submit" class="button" type="submit" value="Submit">
-			  </div>	
-			   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-		</form>
+			<input id="name" type="text" class="validation-error" placeholder="Ed Coan" required />
+			<label id="email-label" for="email">Email</label>
+			<input id="email" type="email" class="validation-error" placeholder="squatdeeper@email.com" required />
+			<label id="number-label" for="number">Age</label>
+			<input id="number" type="number" min=13 max=99 class="validation-error" placeholder="Enter Age" required />
+			<label id="dropdown-selection" for="dropdown">Select Weight Class</label>
+			<select id="dropdown" name="weight-class">
+				<option value="select class">select class</option>
+				<option value="30.0kg">30.0kg</option>
+				<option value="35.0kg">35.0kg</option>
+				<option value="40.0kg">40.0kg</option>
+				<option value="43.0kg">43.0kg</option>
+				<option value="47.0kg">47.0kg</option>
+				<option value="48.0kg">48.0kg</option>
+				<option value="52.0kg">52.0kg</option>
+				<option value="53.0kg">53.0kg</option>
+				<option value="57.0kg">57.0kg</option>
+				<option value="59.0kg">59.0kg</option>
+				<option value="63.0kg">63.0kg</option>
+				<option value="66.0kg">66.0kg</option>
+				<option value="72.0kg">72.0kg</option>
+				<option value="74.0kg">74.0kg</option>
+				<option value="83.0kg">83.0kg</option>
+				<option value="84.0kg">84.0kg</option>
+				<option value="84.0kg+">84.0kg+</option>
+				<option value="93.0kg">93.0kg</option>
+				<option value="105.0kg">105.0kg</option>
+				<option value="120.0kg">120.0kg</option>
+				<option value="120.0kg+">120.0kg+</option>
+			</select>
+		</div>
+		<h3>Please select areas where we could improve.</h3>
+		<div id="improvements" class="improvements">
+			<input type="checkbox" name="Judging Calls" class="check" value="Judging Rotation"> Judging Calls
+			<input type="checkbox" name="Judging Rotation" class="check" value="Judging Rotation"> Judging Rotation
+			<input type="checkbox" name="Judge Feedback & Communication" class="check"
+				value="Judge Feedback & Communication"> Judge Feedback & Communication
+			<input type="checkbox" name="Check In" class="check" value="Check in"> Check in
+			<input type="checkbox" name="Weigh In" class="check" value="Weigh in"> Weigh in
+			<input type="checkbox" name="Chalk & Powder Station" class="check" value="Chalk & Powder Station"> Chalk &
+			Powder Station
+			<input type="checkbox" name="Warm Up Area" class="check" value="Warm Up Area"> Warm Up Area
+			<input type="checkbox" name="Seating & Accesability" class="check" value="Seating & Accesability"> Seating &
+			Accesability
+		</div>
+		<div id="rate-judges">
+			<p id="rate-heading">Please Rate Overall Judging Accuracy</p>
+			<input type="radio" id="Excellent" name="rating" value="Excellent" />
+			<label for="Excellent">Excellent</label>
+			<input type="radio" id="Good" name="rating" value="Good" />
+			<label for="Good">Good</label>
+			<input type="radio" id="Average" name="rating" value="Average" />
+			<label for="Average">Average</label>
+			<input type="radio" id="Poor" name="rating" value="Poor" />
+			<label for="Poor">Poor</label>
+			<p id="select-gender">Please select Gender</p>
+			<input type="radio" id="Male" name="Gender" value="Male" />
+			<label for="Male">Male</label>
+			<input type="radio" id="Female" name="Gender" value="Female" />
+			<label for="Female">Female</label>
+		</div>
+		<div id="add-comments">
+			<p>Please submit additional feedback below.</p>
+			<textarea class="comments" rows="10" cols="50"></textarea>
+		</div>
+		<div id="sub-button">
+			<input id="submit" class="button" type="submit" value="Submit">
+		</div>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</form>
 </body>
+
 </html>
